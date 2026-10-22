@@ -1,0 +1,37 @@
+{
+  "name": "bikipthuattoan-dsa-2005",
+  "version": "2.0.0",
+  "description": "Bí kíp Thuật toán cho sinh viên Java/.NET - Desktop Edition (MSDN 2005 .CHM Viewer)",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "dist:win": "electron-builder --win",
+    "dist:mac": "electron-builder --mac",
+    "dist:linux": "electron-builder --linux"
+  },
+  "author": "Bí kíp Thuật toán Java/.NET",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^28.2.0",
+    "electron-builder": "^24.9.1"
+  },
+  "build": {
+    "appId": "com.bikipthuattoan.dsa2005",
+    "productName": "BiKipThuatToan_2005",
+    "win": {
+      "target": "nsis"
+    },
+    "mac": {
+      "target": "dmg"
+    },
+    "linux": {
+      "target": "AppImage"
+    },
+    "directories": {
+      "output": "dist"
+    }
+  }
+}
